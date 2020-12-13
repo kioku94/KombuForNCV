@@ -1,4 +1,5 @@
-# Kombu (HTML5 ニコニコ生放送コメントジェネレーター)
+# Kombu
+**HTML5 ニコニコ生放送コメントジェネレーター**
 
 Niconico Comment Viewer を用いて配信画面にコメントを表示するツールです。
 
