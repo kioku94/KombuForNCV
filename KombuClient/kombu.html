@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kombu Client</title>
+  <link rel="stylesheet" href="src/kombu.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="src/client.js"></script>
+  <script>
+    $(function() {
+      const client = new Kombu.Client();
+      client.configure();
+
+      window.onbeforeunload = function() {
+        client.dispose();
+      };
+    });
+  </script>
+</head>
+<body>
+  <div id="root">
+  </div>
+</body>
+</html>

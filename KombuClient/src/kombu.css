@@ -1,0 +1,44 @@
+#root {
+  font-family: "Arial", "メイリオ";
+  font-size: 28px;
+  padding: 20px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+p { 
+  margin: 0;
+}
+
+.username {
+  color: #fff;
+  margin: 3px 0 0 15px;
+}
+
+.username-text {
+  text-shadow: #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+               #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px;
+}
+
+.username-separator {
+  margin: 0 6px;
+  color: black;
+}
+
+.icon-container img {
+  width: 48px;
+  border-radius: 100%;
+}
+
+.comment-text {
+  margin: 0 0 0 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  text-shadow: #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+               #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px;
+}
