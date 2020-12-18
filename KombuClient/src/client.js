@@ -143,7 +143,18 @@ const Kombu = {};
     show(comment) {
       const view = new CommentView(comment);
       view.createDom().then($comment => {
+        $comment.css({ 'opacity': 0 });
+        $comment.animate({ 'opacity': 1 }, { duration: 300 });
+        this.$root.stop();
         this.$root.prepend($comment);
+        this.$root.css({
+          'margin-top': `-${$comment.height()}px`
+        });
+        this.$root.animate({
+          'margin-top': 0
+        }, {
+          duration: 200
+        });
       });
     }
   }
