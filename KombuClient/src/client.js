@@ -109,12 +109,14 @@ const Kombu = {};
       } else if (this.user) {
         var $nameText = $(`<span class="username-text">${this.user.NickName}</span>`);
       } else {
-        $name.append(`<span class="username-text">${this.comment.No}コメ</span>`);
-        $name.append(`<span class="username-separator">·</span>`);
-        var $nameText = $(`<span>${this.comment.UserId.slice(0, 3)}</span>`);
+        var $nameText = $(`<span class="username-text">${this.comment.UserId.slice(0, 3)}</span>`);
+        var $commentNo = $(`<span class="comment-no">${this.comment.No}コメ</span>`);
       }
-      $nameText.css({ 'color': '#' + userColorCode });
+      $nameText.css({ 'background-color': '#' + userColorCode });
       $name.append($nameText);
+      if ($commentNo) {
+        $name.append($commentNo);
+      }
 
       const $commentText = $(`<div><p class="comment-text">${this.comment.Comment}</p></div>`);
 

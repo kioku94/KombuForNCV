@@ -20,8 +20,9 @@ p {
 }
 
 .username-text {
-  text-shadow: #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
-               #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px;
+  padding: 0 8px;
+  border-radius: 4px;
+  color: #fff;
 }
 
 .username-separator {
@@ -39,6 +40,12 @@ p {
   color: white;
   font-weight: bold;
   font-size: 32px;
+  text-shadow: #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
+               #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px;
+}
+
+.comment-no {
+  margin-left: 14px;
   text-shadow: #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px,
                #000 0px 0px 3px,   #000 0px 0px 3px,   #000 0px 0px 3px;
 }
