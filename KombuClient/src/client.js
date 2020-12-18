@@ -138,6 +138,7 @@ const Kombu = {};
   class CommentPresenter {
     constructor($root) {
       this.$root = $root;
+      this.elements = [];
     }
 
     show(comment) {
@@ -155,6 +156,11 @@ const Kombu = {};
         }, {
           duration: 200
         });
+        this.elements.push($comment);
+        if (this.elements.length >= 10) {
+          this.elements[0].remove();
+          this.elements = this.elements.slice(1);
+        }
       });
     }
   }
